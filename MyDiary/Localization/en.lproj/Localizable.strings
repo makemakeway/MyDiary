@@ -8,5 +8,8 @@
 
 "tab_home" = "Home";
 "tab_setting" = "Setting";
+"tab_calendar" = "calendar";
+"tab_search" = "search";
+
 
 "welcome_text" = "Hello! Nice to meet you";

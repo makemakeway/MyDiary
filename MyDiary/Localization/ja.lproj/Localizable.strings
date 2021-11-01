@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  MyDiary
+
+  Created by 박연배 on 2021/11/01.
+  
+*/
+
+"tab_home" = "じたく";
+"tab_setting" = "せってい";
+"tab_calendar" = "カレンダー"
+"tab_search" = "けんさく"

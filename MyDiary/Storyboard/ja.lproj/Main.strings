@@ -1,0 +1,21 @@
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "7PB-4e-ME4"; */
+"7PB-4e-ME4.title" = "Item";
+
+/* Class = "UILabel"; text = "안녕하세요!"; ObjectID = "RRF-z3-K8t"; */
+"RRF-z3-K8t.text" = "おはようございます!";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "ZPi-AT-zdJ"; */
+"ZPi-AT-zdJ.title" = "Item";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "hgU-Vs-vrE"; */
+"hgU-Vs-vrE.title" = "Item";
+
+/* Class = "UILabel"; text = "사랑해요!"; ObjectID = "lCw-fR-oNh"; */
+"lCw-fR-oNh.text" = "愛する!";
+
+/* Class = "UILabel"; text = "반갑습니다!"; ObjectID = "oSo-NW-r3O"; */
+"oSo-NW-r3O.text" = "!嬉しいです";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "rES-Kq-fe5"; */
+"rES-Kq-fe5.title" = "Item";

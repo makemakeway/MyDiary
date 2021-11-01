@@ -3,6 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -66,5 +68,56 @@
             </objects>
             <point key="canvasLocation" x="1278" y="326"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Xlt-5w-LKz">
+            <objects>
+                <viewController id="bhZ-me-BBs" customClass="ViewController" customModule="MyDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T5H-XK-Mqk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRF-z3-K8t">
+                                <rect key="frame" x="20" y="64" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반갑습니다!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSo-NW-r3O">
+                                <rect key="frame" x="20" y="105" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사랑해요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCw-fR-oNh">
+                                <rect key="frame" x="20" y="146" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VJ0-tX-inR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oSo-NW-r3O" firstAttribute="leading" secondItem="VJ0-tX-inR" secondAttribute="leading" constant="20" id="2Uk-Qu-r7Z"/>
+                            <constraint firstItem="oSo-NW-r3O" firstAttribute="top" secondItem="RRF-z3-K8t" secondAttribute="bottom" constant="20" id="Euk-t4-D6o"/>
+                            <constraint firstItem="VJ0-tX-inR" firstAttribute="trailing" secondItem="oSo-NW-r3O" secondAttribute="trailing" constant="20" id="Uci-vX-6N7"/>
+                            <constraint firstItem="RRF-z3-K8t" firstAttribute="top" secondItem="VJ0-tX-inR" secondAttribute="top" constant="20" id="c4C-5g-Mxr"/>
+                            <constraint firstItem="lCw-fR-oNh" firstAttribute="leading" secondItem="VJ0-tX-inR" secondAttribute="leading" constant="20" id="dax-fH-voS"/>
+                            <constraint firstItem="RRF-z3-K8t" firstAttribute="leading" secondItem="VJ0-tX-inR" secondAttribute="leading" constant="20" id="lsc-XH-BDh"/>
+                            <constraint firstItem="VJ0-tX-inR" firstAttribute="trailing" secondItem="lCw-fR-oNh" secondAttribute="trailing" constant="20" id="q1E-pi-r4N"/>
+                            <constraint firstItem="lCw-fR-oNh" firstAttribute="top" secondItem="oSo-NW-r3O" secondAttribute="bottom" constant="20" id="rbA-VB-DdQ"/>
+                            <constraint firstItem="VJ0-tX-inR" firstAttribute="trailing" secondItem="RRF-z3-K8t" secondAttribute="trailing" constant="20" id="vg3-2a-0eG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgM-LV-brK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="898"/>
+        </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

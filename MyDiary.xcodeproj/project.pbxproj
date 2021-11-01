@@ -33,6 +33,8 @@
 		FF9C9255272FD7E9007D96BF /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9C9253272FD7E8007D96BF /* SearchTableViewCell.xib */; };
 		FF9C9258272FDB55007D96BF /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C9257272FDB55007D96BF /* DiaryModel.swift */; };
 		FF9C925A272FDE2B007D96BF /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C9259272FDE2B007D96BF /* MockData.swift */; };
+		FF9C9261273027E6007D96BF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C9260273027E6007D96BF /* CalendarViewController.swift */; };
+		FF9C926327302830007D96BF /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C926227302830007D96BF /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		FF9C9253272FD7E8007D96BF /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		FF9C9257272FDB55007D96BF /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
 		FF9C9259272FDE2B007D96BF /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		FF9C9260273027E6007D96BF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		FF9C926227302830007D96BF /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 				FF9C9241272FB2F4007D96BF /* HomeViewController.swift */,
 				FF9C9243272FB308007D96BF /* AddViewController.swift */,
 				FF9C9245272FB318007D96BF /* SearchViewController.swift */,
+				FF9C9260273027E6007D96BF /* CalendarViewController.swift */,
+				FF9C926227302830007D96BF /* SettingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,9 +281,11 @@
 				FF9C923E272F89F9007D96BF /* LocalizableStrings.swift in Sources */,
 				FF9C9244272FB308007D96BF /* AddViewController.swift in Sources */,
 				FF9C9246272FB318007D96BF /* SearchViewController.swift in Sources */,
+				FF9C926327302830007D96BF /* SettingViewController.swift in Sources */,
 				FF9C9211272F6F61007D96BF /* ViewController.swift in Sources */,
 				FF9C920D272F6F61007D96BF /* AppDelegate.swift in Sources */,
 				FF9C9229272F737C007D96BF /* Extension+UIFont.swift in Sources */,
+				FF9C9261273027E6007D96BF /* CalendarViewController.swift in Sources */,
 				FF9C9242272FB2F4007D96BF /* HomeViewController.swift in Sources */,
 				FF9C9258272FDB55007D96BF /* DiaryModel.swift in Sources */,
 				FF9C920F272F6F61007D96BF /* SceneDelegate.swift in Sources */,

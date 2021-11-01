@@ -13,6 +13,8 @@ class HomeViewController: UIViewController {
     //MARK: Property
     
     
+    @IBOutlet weak var homeTabBar: UITabBarItem!
+    @IBOutlet weak var navItem: UINavigationItem!
     
     //MARK: Method
     
@@ -28,8 +30,13 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationItem.title = "홈"
-        self.navigationController?.navigationBar.tintColor = .red
+        self.tabBarController?.tabBar.items![0].title = LocalizableStrings.tab_home.localized
+        self.tabBarController?.tabBar.items![1].title = LocalizableStrings.tab_search.localized
+        self.tabBarController?.tabBar.items![2].title = LocalizableStrings.tab_calendar.localized
+        self.tabBarController?.tabBar.items![3].title = LocalizableStrings.tab_setting.localized
     }
     
 
+    
+    
 }

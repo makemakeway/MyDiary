@@ -21,7 +21,7 @@
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLI-RZ-oT5">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="barTintColor" systemColor="systemBackgroundColor"/>
                                 <items>
                                     <navigationItem title="작성" id="XE7-me-Rsr">
                                         <barButtonItem key="leftBarButtonItem" title="취소" id="hiw-lQ-QdO">
@@ -65,6 +65,7 @@
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="EkE-AZ-ly3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="8uK-Sn-Ott"/>
                             <constraint firstItem="SLI-RZ-oT5" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ChL-mV-SgB"/>

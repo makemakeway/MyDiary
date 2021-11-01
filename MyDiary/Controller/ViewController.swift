@@ -25,9 +25,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = LocalizableStrings.welcome_text.localized
-        
-        welcomeLabel.font = UIFont().mainFontBold
         
     }
 

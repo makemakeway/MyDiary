@@ -30,6 +30,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="homeTabBar" destination="bKZ-cf-78h" id="vte-p7-sdF"/>
+                        <outlet property="navItem" destination="6ME-zW-8EC" id="EQI-rw-HZH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,6 +10,10 @@ import Foundation
 enum LocalizableStrings: String {
     case welcome_text
     case backup_text
+    case tab_home
+    case tab_setting
+    case tab_calendar
+    case tab_search
     
     
     
