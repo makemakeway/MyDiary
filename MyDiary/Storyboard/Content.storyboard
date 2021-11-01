@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AddViewController" id="Y6W-OH-hqX" customClass="AddViewController" customModule="MyDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yeb-QE-EX8">
+                                <rect key="frame" x="20" y="108" width="374" height="358.5"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLI-RZ-oT5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="작성" id="XE7-me-Rsr">
+                                        <barButtonItem key="leftBarButtonItem" title="취소" id="hiw-lQ-QdO">
+                                            <connections>
+                                                <action selector="cancelButtonClicked:" destination="Y6W-OH-hqX" id="iZF-Gk-RbM"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="추가" id="MLJ-ho-N1s">
+                                            <connections>
+                                                <action selector="addButtonClicked:" destination="Y6W-OH-hqX" id="ytW-5T-asc"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="제목을 입력해주세요." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SQt-ss-WGA">
+                                <rect key="frame" x="20" y="486.5" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1dZ-Ox-6ul"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EkE-AZ-ly3">
+                                <rect key="frame" x="20" y="550.5" width="374" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="PhN-It-DZJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="2021년 11월 01일"/>
+                                <connections>
+                                    <action selector="dateButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Pp1-8S-QZX"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="일기 내용을 입력해주세요." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gA5-TX-Xa2">
+                                <rect key="frame" x="20" y="614.5" width="374" height="179"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <constraints>
+                            <constraint firstItem="EkE-AZ-ly3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="8uK-Sn-Ott"/>
+                            <constraint firstItem="SLI-RZ-oT5" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ChL-mV-SgB"/>
+                            <constraint firstItem="yeb-QE-EX8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Cln-GW-vzd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SLI-RZ-oT5" secondAttribute="trailing" id="DXW-o6-wNx"/>
+                            <constraint firstItem="gA5-TX-Xa2" firstAttribute="top" secondItem="EkE-AZ-ly3" secondAttribute="bottom" constant="20" id="LEB-0i-beX"/>
+                            <constraint firstItem="yeb-QE-EX8" firstAttribute="top" secondItem="SLI-RZ-oT5" secondAttribute="bottom" constant="20" id="NvH-aI-3Ep"/>
+                            <constraint firstItem="gA5-TX-Xa2" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.2" id="OGE-ju-Ys3"/>
+                            <constraint firstItem="EkE-AZ-ly3" firstAttribute="top" secondItem="SQt-ss-WGA" secondAttribute="bottom" constant="20" id="UM7-JS-raG"/>
+                            <constraint firstItem="SQt-ss-WGA" firstAttribute="top" secondItem="yeb-QE-EX8" secondAttribute="bottom" constant="20" id="akP-fa-Br4"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yeb-QE-EX8" secondAttribute="trailing" constant="20" id="cK1-bf-QQT"/>
+                            <constraint firstItem="SQt-ss-WGA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="dBF-hO-UKv"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gA5-TX-Xa2" secondAttribute="trailing" constant="20" id="fVa-SI-H0F"/>
+                            <constraint firstItem="gA5-TX-Xa2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="iRd-QE-1lE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EkE-AZ-ly3" secondAttribute="trailing" constant="20" id="m6s-7Q-d5a"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SQt-ss-WGA" secondAttribute="trailing" constant="20" id="mLV-G9-zeh"/>
+                            <constraint firstItem="SLI-RZ-oT5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="o8U-PY-QKf"/>
+                            <constraint firstItem="yeb-QE-EX8" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.4" id="v66-Oj-jfx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentTextView" destination="gA5-TX-Xa2" id="ElY-Zd-yPH"/>
+                        <outlet property="dateButton" destination="EkE-AZ-ly3" id="B0a-Za-aUO"/>
+                        <outlet property="pictureImage" destination="yeb-QE-EX8" id="RL1-tn-vAW"/>
+                        <outlet property="titleTextField" destination="SQt-ss-WGA" id="g04-XI-Waw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
