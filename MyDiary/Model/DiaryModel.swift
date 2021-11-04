@@ -6,8 +6,10 @@
 //
 
 import Foundation
+import UIKit
 
-struct DiaryModel: Codable {
+struct DiaryModel {
     var title: String
     var content: String
+    var image: UIImage?
 }

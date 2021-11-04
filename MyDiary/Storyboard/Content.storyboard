@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yeb-QE-EX8">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yeb-QE-EX8">
                                 <rect key="frame" x="20" y="108" width="374" height="358.5"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SLI-RZ-oT5">
@@ -63,6 +63,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NgV-0F-KsR">
+                                <rect key="frame" x="348" y="420.5" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NgV-0F-KsR" secondAttribute="height" multiplier="1:1" id="x2T-cX-aCg"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addPhotoButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ggr-Wa-Z5H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -82,11 +95,15 @@
                             <constraint firstItem="gA5-TX-Xa2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="iRd-QE-1lE"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="EkE-AZ-ly3" secondAttribute="trailing" constant="20" id="m6s-7Q-d5a"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SQt-ss-WGA" secondAttribute="trailing" constant="20" id="mLV-G9-zeh"/>
+                            <constraint firstItem="NgV-0F-KsR" firstAttribute="height" secondItem="yeb-QE-EX8" secondAttribute="height" multiplier="0.1" id="meh-LZ-yzX"/>
                             <constraint firstItem="SLI-RZ-oT5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="o8U-PY-QKf"/>
+                            <constraint firstItem="NgV-0F-KsR" firstAttribute="trailing" secondItem="yeb-QE-EX8" secondAttribute="trailing" constant="-10" id="s2b-Sb-xyU"/>
                             <constraint firstItem="yeb-QE-EX8" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.4" id="v66-Oj-jfx"/>
+                            <constraint firstItem="NgV-0F-KsR" firstAttribute="bottom" secondItem="yeb-QE-EX8" secondAttribute="bottom" constant="-10" id="vRh-Uj-TUd"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addPhotoButton" destination="NgV-0F-KsR" id="Wb4-S9-EBL"/>
                         <outlet property="contentTextView" destination="gA5-TX-Xa2" id="ElY-Zd-yPH"/>
                         <outlet property="dateButton" destination="EkE-AZ-ly3" id="B0a-Za-aUO"/>
                         <outlet property="pictureImage" destination="yeb-QE-EX8" id="RL1-tn-vAW"/>
@@ -99,6 +116,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

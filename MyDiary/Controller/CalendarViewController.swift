@@ -19,8 +19,7 @@ class CalendarViewController: UIViewController {
     //MARK: LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.title = "캘린더"
-        
+        title = LocalizableStrings.tab_calendar.localized
     }
     
 

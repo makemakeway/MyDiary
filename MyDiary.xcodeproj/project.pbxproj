@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF89F3302730C8C700A60647 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = FF89F32F2730C8C700A60647 /* Realm */; };
+		FF89F3322730C8C700A60647 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FF89F3312730C8C700A60647 /* RealmSwift */; };
+		FF89F3352730C97400A60647 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF89F3342730C97400A60647 /* RealmModel.swift */; };
+		FF89F38027336DB500A60647 /* Zip in Frameworks */ = {isa = PBXBuildFile; productRef = FF89F37F27336DB500A60647 /* Zip */; };
+		FF89F3852734138E00A60647 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF89F3842734138E00A60647 /* DetailViewController.swift */; };
+		FF89F3872734139C00A60647 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF89F3862734139C00A60647 /* Detail.storyboard */; };
+		FF89F38A273413F200A60647 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF89F388273413F200A60647 /* DetailTableViewCell.swift */; };
+		FF89F38B273413F200A60647 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF89F389273413F200A60647 /* DetailTableViewCell.xib */; };
 		FF9C920D272F6F61007D96BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C920C272F6F61007D96BF /* AppDelegate.swift */; };
 		FF9C920F272F6F61007D96BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C920E272F6F61007D96BF /* SceneDelegate.swift */; };
 		FF9C9211272F6F61007D96BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C9210272F6F61007D96BF /* ViewController.swift */; };
@@ -38,6 +46,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF89F3342730C97400A60647 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		FF89F3842734138E00A60647 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FF89F3862734139C00A60647 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		FF89F388273413F200A60647 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		FF89F389273413F200A60647 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		FF9C9209272F6F61007D96BF /* MyDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9C920C272F6F61007D96BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF9C920E272F6F61007D96BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,12 +92,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF89F38027336DB500A60647 /* Zip in Frameworks */,
+				FF89F3322730C8C700A60647 /* RealmSwift in Frameworks */,
+				FF89F3302730C8C700A60647 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF89F3332730C95D00A60647 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				FF89F3342730C97400A60647 /* RealmModel.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
 		FF9C9200272F6F60007D96BF = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +128,7 @@
 		FF9C920B272F6F61007D96BF /* MyDiary */ = {
 			isa = PBXGroup;
 			children = (
+				FF89F3332730C95D00A60647 /* Realm */,
 				FF9C9256272FDB3E007D96BF /* Model */,
 				FF9C9251272FD7CD007D96BF /* View */,
 				FF9C9240272FB2B8007D96BF /* Storyboard */,
@@ -157,6 +182,7 @@
 				FF9C9245272FB318007D96BF /* SearchViewController.swift */,
 				FF9C9260273027E6007D96BF /* CalendarViewController.swift */,
 				FF9C926227302830007D96BF /* SettingViewController.swift */,
+				FF89F3842734138E00A60647 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +197,7 @@
 				FF9C924B272FB536007D96BF /* Calendar.storyboard */,
 				FF9C924D272FB541007D96BF /* Search.storyboard */,
 				FF9C924F272FB553007D96BF /* Setting.storyboard */,
+				FF89F3862734139C00A60647 /* Detail.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -180,6 +207,8 @@
 			children = (
 				FF9C9252272FD7E8007D96BF /* SearchTableViewCell.swift */,
 				FF9C9253272FD7E8007D96BF /* SearchTableViewCell.xib */,
+				FF89F388273413F200A60647 /* DetailTableViewCell.swift */,
+				FF89F389273413F200A60647 /* DetailTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -209,6 +238,11 @@
 			dependencies = (
 			);
 			name = MyDiary;
+			packageProductDependencies = (
+				FF89F32F2730C8C700A60647 /* Realm */,
+				FF89F3312730C8C700A60647 /* RealmSwift */,
+				FF89F37F27336DB500A60647 /* Zip */,
+			);
 			productName = MyDiary;
 			productReference = FF9C9209272F6F61007D96BF /* MyDiary.app */;
 			productType = "com.apple.product-type.application";
@@ -238,6 +272,10 @@
 				ko,
 			);
 			mainGroup = FF9C9200272F6F60007D96BF;
+			packageReferences = (
+				FF89F32E2730C8C700A60647 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				FF89F37E27336DB500A60647 /* XCRemoteSwiftPackageReference "Zip" */,
+			);
 			productRefGroup = FF9C920A272F6F61007D96BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,11 +298,13 @@
 				FF9C924C272FB536007D96BF /* Calendar.storyboard in Resources */,
 				FF9C9219272F6F64007D96BF /* LaunchScreen.storyboard in Resources */,
 				FF9C9231272F8021007D96BF /* Localizable.strings in Resources */,
+				FF89F3872734139C00A60647 /* Detail.storyboard in Resources */,
 				FF9C9216272F6F64007D96BF /* Assets.xcassets in Resources */,
 				FF9C9214272F6F61007D96BF /* Main.storyboard in Resources */,
 				FF9C924E272FB541007D96BF /* Search.storyboard in Resources */,
 				FF9C9255272FD7E9007D96BF /* SearchTableViewCell.xib in Resources */,
 				FF9C9224272F6FE9007D96BF /* SCDream5.otf in Resources */,
+				FF89F38B273413F200A60647 /* DetailTableViewCell.xib in Resources */,
 				FF9C9250272FB553007D96BF /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,18 +317,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF9C923C272F88EB007D96BF /* Extension+String.swift in Sources */,
+				FF89F38A273413F200A60647 /* DetailTableViewCell.swift in Sources */,
 				FF9C925A272FDE2B007D96BF /* MockData.swift in Sources */,
 				FF9C923E272F89F9007D96BF /* LocalizableStrings.swift in Sources */,
 				FF9C9244272FB308007D96BF /* AddViewController.swift in Sources */,
 				FF9C9246272FB318007D96BF /* SearchViewController.swift in Sources */,
 				FF9C926327302830007D96BF /* SettingViewController.swift in Sources */,
 				FF9C9211272F6F61007D96BF /* ViewController.swift in Sources */,
+				FF89F3852734138E00A60647 /* DetailViewController.swift in Sources */,
 				FF9C920D272F6F61007D96BF /* AppDelegate.swift in Sources */,
 				FF9C9229272F737C007D96BF /* Extension+UIFont.swift in Sources */,
 				FF9C9261273027E6007D96BF /* CalendarViewController.swift in Sources */,
 				FF9C9242272FB2F4007D96BF /* HomeViewController.swift in Sources */,
 				FF9C9258272FDB55007D96BF /* DiaryModel.swift in Sources */,
 				FF9C920F272F6F61007D96BF /* SceneDelegate.swift in Sources */,
+				FF89F3352730C97400A60647 /* RealmModel.swift in Sources */,
 				FF9C9254272FD7E8007D96BF /* SearchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +574,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF89F32E2730C8C700A60647 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.18.0;
+			};
+		};
+		FF89F37E27336DB500A60647 /* XCRemoteSwiftPackageReference "Zip" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/Zip.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF89F32F2730C8C700A60647 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF89F32E2730C8C700A60647 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		FF89F3312730C8C700A60647 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF89F32E2730C8C700A60647 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		FF89F37F27336DB500A60647 /* Zip */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF89F37E27336DB500A60647 /* XCRemoteSwiftPackageReference "Zip" */;
+			productName = Zip;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FF9C9201272F6F60007D96BF /* Project object */;
 }
