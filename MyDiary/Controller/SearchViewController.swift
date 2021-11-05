@@ -22,7 +22,7 @@ class SearchViewController: UIViewController {
     
     lazy var df: DateFormatter = {
         let df = DateFormatter()
-        df.dateFormat = "yyyy-MM-dd hh:mm:ss"
+        df.dateFormat = "yyyy년 MM월 dd일"
         df.locale = Locale(identifier: "ko-KR")
         df.timeZone = TimeZone(identifier: "KST")
         return df
@@ -91,7 +91,6 @@ class SearchViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("viewWillAppear")
         tasks = localRealm.objects(Diary.self)
         tableView.reloadData()
     }
@@ -116,13 +115,12 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         cell.contentLabel.text = data.content
         cell.contentLabel.font = UIFont().mainFontLight
         
-        cell.dateLabel.text = "2021. 11. 1"
+        cell.dateLabel.text = df.string(from: data.writtenDate)
         cell.dateLabel.font = UIFont().mainFontLight
         cell.dateLabel.textColor = .gray
         
         
         cell.pictureImage.image = loadImageFromDocumenet(imageName: "\(data._id).jpg")
-        cell.pictureImage.backgroundColor = .gray
         cell.pictureImage.layer.cornerRadius = 10
         
         return cell

@@ -43,6 +43,10 @@
 		FF9C925A272FDE2B007D96BF /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C9259272FDE2B007D96BF /* MockData.swift */; };
 		FF9C9261273027E6007D96BF /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C9260273027E6007D96BF /* CalendarViewController.swift */; };
 		FF9C926327302830007D96BF /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9C926227302830007D96BF /* SettingViewController.swift */; };
+		FFD3277F2734AD90008D5031 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = FFD3277E2734AD90008D5031 /* FSCalendar */; };
+		FFD327812734B51F008D5031 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD327802734B51F008D5031 /* DatePickerViewController.swift */; };
+		FFD327832734CFF5008D5031 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD327822734CFF5008D5031 /* Extension+UIViewController.swift */; };
+		FFD327852734D01D008D5031 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD327842734D01D008D5031 /* Extension+Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,6 +89,9 @@
 		FF9C9259272FDE2B007D96BF /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		FF9C9260273027E6007D96BF /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		FF9C926227302830007D96BF /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		FFD327802734B51F008D5031 /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		FFD327822734CFF5008D5031 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		FFD327842734D01D008D5031 /* Extension+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF89F38027336DB500A60647 /* Zip in Frameworks */,
+				FFD3277F2734AD90008D5031 /* FSCalendar in Frameworks */,
 				FF89F3322730C8C700A60647 /* RealmSwift in Frameworks */,
 				FF89F3302730C8C700A60647 /* Realm in Frameworks */,
 			);
@@ -159,6 +167,8 @@
 			children = (
 				FF9C9228272F737C007D96BF /* Extension+UIFont.swift */,
 				FF9C923B272F88EB007D96BF /* Extension+String.swift */,
+				FFD327822734CFF5008D5031 /* Extension+UIViewController.swift */,
+				FFD327842734D01D008D5031 /* Extension+Date.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -183,6 +193,7 @@
 				FF9C9260273027E6007D96BF /* CalendarViewController.swift */,
 				FF9C926227302830007D96BF /* SettingViewController.swift */,
 				FF89F3842734138E00A60647 /* DetailViewController.swift */,
+				FFD327802734B51F008D5031 /* DatePickerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -242,6 +253,7 @@
 				FF89F32F2730C8C700A60647 /* Realm */,
 				FF89F3312730C8C700A60647 /* RealmSwift */,
 				FF89F37F27336DB500A60647 /* Zip */,
+				FFD3277E2734AD90008D5031 /* FSCalendar */,
 			);
 			productName = MyDiary;
 			productReference = FF9C9209272F6F61007D96BF /* MyDiary.app */;
@@ -275,6 +287,7 @@
 			packageReferences = (
 				FF89F32E2730C8C700A60647 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				FF89F37E27336DB500A60647 /* XCRemoteSwiftPackageReference "Zip" */,
+				FFD3277D2734AD90008D5031 /* XCRemoteSwiftPackageReference "FSCalendar" */,
 			);
 			productRefGroup = FF9C920A272F6F61007D96BF /* Products */;
 			projectDirPath = "";
@@ -318,11 +331,14 @@
 			files = (
 				FF9C923C272F88EB007D96BF /* Extension+String.swift in Sources */,
 				FF89F38A273413F200A60647 /* DetailTableViewCell.swift in Sources */,
+				FFD327832734CFF5008D5031 /* Extension+UIViewController.swift in Sources */,
+				FFD327812734B51F008D5031 /* DatePickerViewController.swift in Sources */,
 				FF9C925A272FDE2B007D96BF /* MockData.swift in Sources */,
 				FF9C923E272F89F9007D96BF /* LocalizableStrings.swift in Sources */,
 				FF9C9244272FB308007D96BF /* AddViewController.swift in Sources */,
 				FF9C9246272FB318007D96BF /* SearchViewController.swift in Sources */,
 				FF9C926327302830007D96BF /* SettingViewController.swift in Sources */,
+				FFD327852734D01D008D5031 /* Extension+Date.swift in Sources */,
 				FF9C9211272F6F61007D96BF /* ViewController.swift in Sources */,
 				FF89F3852734138E00A60647 /* DetailViewController.swift in Sources */,
 				FF9C920D272F6F61007D96BF /* AppDelegate.swift in Sources */,
@@ -592,6 +608,14 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		FFD3277D2734AD90008D5031 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -609,6 +633,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FF89F37E27336DB500A60647 /* XCRemoteSwiftPackageReference "Zip" */;
 			productName = Zip;
+		};
+		FFD3277E2734AD90008D5031 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFD3277D2734AD90008D5031 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

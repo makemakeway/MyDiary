@@ -108,7 +108,18 @@ class AddViewController: UIViewController {
     
 
     @IBAction func addButtonClicked(_ sender: UIBarButtonItem) {
-        let task = Diary(title: titleTextField.text!, content: contentTextView.text!, writtenDate: Date(), publishedDate: Date())
+        
+        
+        guard let date = dateButton.currentTitle, let value = DateFormatter.customFormat.date(from: date) else {
+            print("DEBUG: 문자열 -> 날짜 변환 실패")
+            return
+        }
+        
+        
+        let task = Diary(title: titleTextField.text!,
+                         content: contentTextView.text!,
+                         writtenDate: value,
+                         publishedDate: Date())
         
         try! localRealm.write {
             localRealm.add(task)
@@ -123,8 +134,29 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func dateButtonClicked(_ sender: UIButton) {
+        let alert = UIAlertController(title: "날짜 선택", message: nil, preferredStyle: .alert)
+        
+        let sb = UIStoryboard(name: "Content", bundle: nil)
+        let contentView = sb.instantiateViewController(withIdentifier: "DatePickerViewController") as! DatePickerViewController
+        contentView.preferredContentSize.height = 300
+        
+    
+        
+        alert.setValue(contentView, forKey: "contentViewController")
         
         
+        let ok = UIAlertAction(title: "확인", style: .default) { _ in
+            
+            let value = DateFormatter.customFormat.string(from: contentView.datePicker.date)
+            
+            sender.setTitle(value, for: .normal)
+        }
+        
+        let cancel = UIAlertAction(title: "취소", style: .cancel, handler: nil)
+        
+        alert.addAction(cancel)
+        alert.addAction(ok)
+        self.present(alert, animated: true, completion: nil)
     }
     
     
@@ -133,7 +165,7 @@ class AddViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        dateButton.setTitle(DateFormatter.customFormat.string(from: Date()), for: .normal)
         
     }
     

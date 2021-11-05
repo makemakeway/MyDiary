@@ -15,12 +15,39 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HW-bl-vtz" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="44" width="414" height="414"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0HW-bl-vtz" secondAttribute="height" multiplier="1:1" id="Xww-et-qEM"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmF-i8-aK2">
+                                <rect key="frame" x="20" y="478" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0HW-bl-vtz" secondAttribute="trailing" id="Eoc-fT-zMn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GmF-i8-aK2" secondAttribute="trailing" constant="20" id="Idw-Zb-SzK"/>
+                            <constraint firstItem="GmF-i8-aK2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="JfS-eP-VJK"/>
+                            <constraint firstItem="0HW-bl-vtz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="WFV-yg-Cn1"/>
+                            <constraint firstItem="0HW-bl-vtz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ew0-59-7DY"/>
+                            <constraint firstItem="GmF-i8-aK2" firstAttribute="top" secondItem="0HW-bl-vtz" secondAttribute="bottom" constant="20" id="fnu-yC-8eb"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="calendar" catalog="system" id="NVe-Li-CuT"/>
                     <navigationItem key="navigationItem" id="DM5-HP-fQw"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="calendarView" destination="0HW-bl-vtz" id="Ts6-E1-9e2"/>
+                        <outlet property="countLabel" destination="GmF-i8-aK2" id="PCe-EU-T97"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -29,8 +56,8 @@
     </scenes>
     <resources>
         <image name="calendar" catalog="system" width="128" height="106"/>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
